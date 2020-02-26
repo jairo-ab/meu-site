@@ -16,66 +16,79 @@
 </head>
 
 <body>
-    <section class="hero is-fullheight is-default is-bold">
-        <div class="has-text-centered">
-            <img src="img/rocket.gif" alt="Jairo Abreu" style="width:80; height:70px;">
-        </div>
-        <h1 class="has-text-light has-text-centered">Jairo Abreu</h1>
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="columns is-vcentered">
-                    <div class="column is-5">
-                        <figure class="image is-4by3">
-                            <img src="img/capa.jpg.png" alt="Octocat">
-                        </figure>
-                    </div>
-                    <div class="column is-6 is-offset-1">
-                        <h1 class="title is-2 has-text-light">
-                            Site Pessoal
-                        </h1>
-                        <h2 class="subtitle is-4 has-text-light">
-                            Caso esteja precisando de um site, pode contar comigo.
-                        </h2>
-                        <br>
-                        <p class="has-text-centered">
+    <div class="carregar" id="carregar"></div>
+    <div class="corpo" id="corpo">
+        <section class="hero is-fullheight is-default is-bold">
+            <div class="has-text-centered">
+                <img src="img/rocket.gif" alt="Jairo Abreu" style="width:80; height:70px;">
+            </div>
+            <h1 class="has-text-light has-text-centered">Jairo Abreu</h1>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <div class="columns is-vcentered">
+                        <div class="column is-5">
+                            <figure class="image is-4by3">
+                                <img src="img/capa.jpg.png" alt="Octocat">
+                            </figure>
+                        </div>
+                        <div class="column is-6 is-offset-1">
+                            <h1 class="title is-2 has-text-light">
+                                Site Pessoal
+                            </h1>
+                            <h2 class="subtitle is-4 has-text-light">
+                                Caso esteja precisando de um site, pode contar comigo.
+                            </h2>
+                            <br>
+                            <p class="has-text-centered">
 
-                            <a href="https://t.me/jairoabreeu" class="button is-rounded is-outlined is-small is-light">
-                                <span class="icon">
-                                    <i class="fab fa-telegram"></i>
-                                </span>
-                                <span>Telegram</span>
-                            </a>
+                                <a href="https://t.me/jairoabreeu"
+                                    class="button is-rounded is-outlined is-small is-light">
+                                    <span class="icon">
+                                        <i class="fab fa-telegram"></i>
+                                    </span>
+                                    <span>Telegram</span>
+                                </a>
 
-                            <a href="https://www.instagram.com/jairoabreeu" class="button is-rounded is-outlined is-small is-light">
-                                <span class="icon">
-                                    <i class="fab fa-instagram"></i>
-                                </span>
-                                <span>Instagram</span>
-                            </a>
+                                <a href="https://www.instagram.com/jairoabreeu"
+                                    class="button is-rounded is-outlined is-small is-light">
+                                    <span class="icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </span>
+                                    <span>Instagram</span>
+                                </a>
 
-                            <a href="https://github.com/jairo-ab" class="button is-rounded is-outlined is-small is-light">
-                                <span class="icon">
-                                    <i class="fab fa-github"></i>
-                                </span>
-                                <span>GitHub</span>
-                            </a>
+                                <a href="https://github.com/jairo-ab"
+                                    class="button is-rounded is-outlined is-small is-light">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>GitHub</span>
+                                </a>
 
-                        </p>
-        
+                            </p>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero-foot">
-            <div class="container">
-                <div class="tabs is-centered">
-                    <ul>
-                        <li><a class="has-text-light" href="https://teste.tk">&copy; 2020 Jairo Abreu</a></li>
-                    </ul>
+            <div class="hero-foot">
+                <div class="container">
+                    <div class="tabs is-centered">
+                        <ul>
+                            <li><a class="has-text-light" href="https://teste.tk">&copy; 2020 Jairo Abreu</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+    <script>
+        var intervalo = setInterval(function () {
+            clearInterval(intervalo);
+            document.getElementById("carregar").style.display = "none";
+            document.getElementById("corpo").style.display = "block";
+        }, 4000)
+    </script>
 </body>
 
 </html>
