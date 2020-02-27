@@ -31,7 +31,7 @@
             <h1 class="has-text-light has-text-centered">Jairo Abreu</h1>
             <br>
             <p class="has-text-centered">
-            <a href="arquivo/curriculo.txt" class="button is-rounded is-dark">
+            <a id="LinkPDF" href="arquivo/curriculo.txt" class="button is-rounded is-dark">
                 <span class="icon">
                     <i class="fas fa-file-pdf"></i></i>
                 </span>
@@ -103,6 +103,13 @@
             document.getElementById("carregar").style.display = "none";
             document.getElementById("corpo").style.display = "block";
         }, 4000)
+    </script>
+    <script>
+        const LinkPDF = document.getElementById("LinkPDF");
+        LinkPDF.addEventListener("click", function(event) {
+            LinkPDF.setAttribute('href', 'data:text/plain;charset-utf-8,' + encodeURIComponent("Conteúdo do Arquivo."));
+            LinkPDF.setAttribute('download', 'novoarquivo');
+        }, false);
     </script>
 </body>
 
