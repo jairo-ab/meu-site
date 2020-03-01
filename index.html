@@ -79,38 +79,79 @@
                                         </span>
                                         <span>GitHub</span>
                                     </a>
-
                                 </p>
-
+                                <br>
+                                <h4 class="has-text-light">Ou entre em contato por <a id="button">e-mail</a></h4>
+                                <div class="modal modal-z" id="modal">
+                                    <div class="modal-background"></div>
+                                    <div class="modal-content">
+                                        <div class="section modal-wrap">
+                                            <form action="https://api.staticforms.xyz/submit" method="post"
+                                                id="staticform">
+                                                <!-- Replace with your StaticForms accessKey -->
+                                                <input type="hidden" name="accessKey"
+                                                    value="f37ac368-7575-447f-b171-eb2e287f2ce6">
+                                                <input type="hidden" name="subject" value="Test from jsfiddle">
+                                                <div class="field">
+                                                    <label class="title is-5 has-text-light has-text-left">Nome</label>
+                                                    <div class="control has-icons-left">
+                                                        <input class="input" type="text" name="name"
+                                                            placeholder="Digite seu nome" required>
+                                                        <span class="icon is-small is-left">
+                                                            <i class="fas fa-signature"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="field">
+                                                    <label class="title is-5 has-text-light">Email</label>
+                                                    <div class="control has-icons-left has-icons-right">
+                                                        <input class="input" type="email" placeholder="Digite seu Email"
+                                                            required>
+                                                        <span class="icon is-small is-left">
+                                                            <i class="fas fa-envelope"></i>
+                                                        </span>
+                                                        <span class="icon is-small is-right">
+                                                            <i class="fas fa-check"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="field">
+                                                    <label class="title is-5 has-text-light">Mensagem</label>
+                                                    <div class="control">
+                                                        <textarea class="textarea is-primary" name="message"
+                                                            placeholder="Escreva sua mensagem" required></textarea>
+                                                    </div>
+                                                </div>
+                                                <button class="button is-primary" type="Submit">Enviar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <button class="modal-close is-large" aria-label="close" id="close"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="hero-foot">
-                    <div class="container">
-                        <div class="tabs is-centered">
-                            <ul>
-                                <li><a class="has-text-light" href="https://teste.tk">&copy; 2020 Jairo Abreu</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        </section>
     </div>
+    <div class="hero-foot">
+        <div class="container">
+            <div class="tabs is-centered">
+                <ul>
+                    <li><a class="has-text-light" href="https://teste.tk">&copy; 2020 Jairo Abreu</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    <script src="bulma.js"></script>
     <script>
         var intervalo = setInterval(function () {
             clearInterval(intervalo);
             document.getElementById("carregar").style.display = "none";
             document.getElementById("corpo").style.display = "block";
-        }, 4000)
+        }, 3000)
     </script>
-    <!--<script>
-        const LinkPDF = document.getElementById("LinkPDF");
-        LinkPDF.addEventListener("click", function (event) {
-            LinkPDF.setAttribute('href', 'data:text/plain;charset-utf-8,' + encodeURIComponent("Site em fase beta, por isso ainda não tem um .PDF."));
-            LinkPDF.setAttribute('download', 'curriculo.txt');
-        }, false);
-    </script>-->
 </body>
 
 </html>

@@ -21,25 +21,32 @@ h1 {
     transform: translate(-50%,-50%);
     width: 60px;
     height: 60px;
-  }
+}
   
-  .box{
+.box{
     position: absolute;
     width: 30px;
     height: 30px;
     background: #e74c3c;
-  }
+}
   
-  .box:nth-child(1){
+.box:nth-child(1){
     animation: a1 2s infinite linear;
-  }
+}
   
-  .box:nth-child(2){
+.box:nth-child(2){
     animation: a2 2s infinite linear;
-  }
+}
   
+.modal-wrap {
+  background: #2C292F;
+  position: relative;
+  margin-top: 100px;
+  margin-right: 30px;
+  top: 30%;
+}
   
-  @keyframes a1 {
+@keyframes a1 {
     0%{
       top: 0;
       left: 0;
@@ -94,9 +101,9 @@ h1 {
       width: 30px;
       height: 30px;
     }
-  }
+}
   
-  @keyframes a2 {
+@keyframes a2 {
     0%{
       right: 0;
       bottom: 0;
@@ -151,4 +158,4 @@ h1 {
       width: 30px;
       height: 30px;
     }
-  }
+}
