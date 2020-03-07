@@ -10,6 +10,11 @@ h1 {
     font-size: 40px;
 }
 
+h3 {
+  font-family: 'Luckiest Guy' ;
+  font-size: 30px;
+}
+
 .corpo {
     display: none;
 }
@@ -28,6 +33,12 @@ h1 {
     width: 30px;
     height: 30px;
     background: #e74c3c;
+}
+
+.bar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
   
 .box:nth-child(1){
